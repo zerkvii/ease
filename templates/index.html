@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Startseite</title>
+	<link rel="stylesheet" type="text/css" href="/static/main.css">
+</head>
+<body>
+
+	<div class="face">
+		<div class="container">
+			<div class="left-eyeball">
+				<div class="eyelid"></div>
+				<div class="left-eye-pupil"></div>
+			</div>
+			<div class="right-eyeball"></div>
+			<div class="mouth"></div>
+		</div>
+	</div>
+
+	<div class="TorT">话痨的我，不好意思打扰你了，自吹自擂习惯了，23333.。。。。自嗨的老毛病改不了<br>我喜欢说早上好，不喜欢说拜拜，。晚安咯</div>
+
+	<script type="text/javascript">
+
+		var lefteyepupil = document.querySelector(".left-eye-pupil");
+		var eyelid = document.querySelector(".eyelid");
+
+		var mouse = {
+			x: null,
+			y: null
+		}
+
+		window.addEventListener("mousemove", function(event) {
+			mouse.x = event.x;
+			mouse.y = event.y;
+
+			lefteyepupil.style.top = (mouse.y/20)+"px";
+			lefteyepupil.style.left = (mouse.x/20)+"px";
+
+			eyelid.style.height = (mouse.y/20)+"px";
+
+		});
+
+		window.addEventListener("click", function() {
+
+			eyelid.style.height = "100%";
+			setTimeout(function() {
+				eyelid.style.height = (mouse.y/20)+"px";
+			}, 150);
+
+		});
+
+	</script>
+
+</body>
+</html>
