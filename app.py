@@ -8,7 +8,7 @@ def hello_world():
     return render_template('index.html')
 
 
-@app.route('/')
+@app.route('/index1')
 def demo_23():
     return render_template('demo_23.html')
 
@@ -16,6 +16,11 @@ def demo_23():
 @app.route('/answer')
 def answer():
     return render_template('answer.html')
+
+
+@app.route('/')
+def demo_24():
+    return render_template('demo_24.html')
 
 
 if __name__ == '__main__':
