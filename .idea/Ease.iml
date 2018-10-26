@@ -12,6 +12,9 @@
     <orderEntry type="library" name="R Skeletons" level="application" />
     <orderEntry type="library" name="R User Library" level="project" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="react.production" level="application" />
+    <orderEntry type="library" name="react-dom.production" level="application" />
+    <orderEntry type="library" name="typeit" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />

@@ -18,10 +18,23 @@ def answer():
     return render_template('answer.html')
 
 
-@app.route('/')
+@app.route('/index2')
 def demo_24():
     return render_template('demo_24.html')
 
+
+@app.route('/index3')
+def demo_25():
+    return render_template('demo_25.html')
+
+
+@app.route('/index4')
+def demo_26():
+    return render_template('demo_26.html')
+
+@app.route('/')
+def demo_week():
+    return render_template('demo_week.html')
 
 if __name__ == '__main__':
     app.run()
