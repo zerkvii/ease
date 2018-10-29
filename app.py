@@ -32,9 +32,14 @@ def demo_25():
 def demo_26():
     return render_template('demo_26.html')
 
-@app.route('/')
+
+@app.route('/index_week')
 def demo_week():
     return render_template('demo_week.html')
+
+@app.route('/')
+def love():
+    return render_template('love.html')
 
 if __name__ == '__main__':
     app.run()
